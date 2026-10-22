@@ -1,0 +1,14 @@
+{
+  "id": "01",
+  "name": "EfficientNet-B0 Keras",
+  "version": "v1.0",
+  "endpoint": "/api/v1/predict/disease",
+  "benchmarkAcc": 92.55,
+  "benchmarkAccNote": "Held-out test accuracy from Model 01 training evaluation; not guaranteed per upload.",
+  "inputSize": "224 × 224 RGB",
+  "classes": 4,
+  "serviceConnected": true,
+  "inferenceEngine": "keras-efficientnetb0-v1",
+  "inferenceNote": "Loads final_tea_disease_model.keras via Python TensorFlow when smarttea.ml.enabled=true.",
+  "artifact": "Member01/Diseasedetection/final_tea_disease_model.keras"
+}

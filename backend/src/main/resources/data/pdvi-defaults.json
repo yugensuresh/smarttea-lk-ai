@@ -1,0 +1,10 @@
+{
+  "model01Disease": "Blister_Blight",
+  "model01Confidence": 0.7,
+  "severityProbabilities": {
+    "Low": 0.05,
+    "Moderate": 0.25,
+    "High": 0.1,
+    "Severe": 0.6
+  }
+}

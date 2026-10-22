@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "model": "MODEL 03",
+    "advisory": "ACTIVE ADVISORY",
+    "cycle": "CYCLE 2024-Q3",
+    "score": 72,
+    "delta": 4,
+    "band": "Substantial Risk",
+    "telemetryStations": 42,
+    "telemetryUpdated": "12 mins ago"
+  },
+  "summary": "Estate vulnerability is elevated due to coupled microclimate humidity and historical blister-blight zones in Nuwara Eliya Sector 2. Supervisors should prioritize protective sprays on the top three blocks before the next cool night.",
+  "contributingFactors": [
+    {
+      "id": "climate",
+      "label": "Climate & Humidity",
+      "weight": "30% wt",
+      "value": 88,
+      "status": "Critical",
+      "tone": "critical",
+      "bar": "#e23b45"
+    },
+    {
+      "id": "history",
+      "label": "Historical Disease Occurrence",
+      "weight": "30% wt",
+      "value": 76,
+      "status": "Elevated",
+      "tone": "elevated",
+      "bar": "#e08a1e"
+    },
+    {
+      "id": "vigor",
+      "label": "Crop Age & Bush Vigor",
+      "weight": "25% wt",
+      "value": 58,
+      "status": "Moderate",
+      "tone": "moderate",
+      "bar": "#5cb87a"
+    },
+    {
+      "id": "drainage",
+      "label": "Soil Drainage & Slope",
+      "weight": "15% wt",
+      "value": 42,
+      "status": "Normal",
+      "tone": "normal",
+      "bar": "#1f7a4d"
+    }
+  ],
+  "priorityBlocks": [
+    {
+      "id": "b4s9",
+      "block": "Block 04, Sector 09",
+      "concern": "High Humidity",
+      "score": 88,
+      "tone": "critical"
+    },
+    {
+      "id": "b2s1",
+      "block": "Block 02, Sector 01",
+      "concern": "Historical Blight",
+      "score": 76,
+      "tone": "elevated"
+    },
+    {
+      "id": "b5s12",
+      "block": "Block 05, Sector 12",
+      "concern": "Drainage Lag",
+      "score": 42,
+      "tone": "moderate"
+    }
+  ],
+  "methodology": [
+    "PDVI aggregates weighted estate factors into a 0–100 vulnerability index refreshed each advisory cycle.",
+    "Climate & humidity and historical disease occurrence each contribute 30% of the composite score.",
+    "Crop age, bush vigor, and soil drainage complete the index using TRI estate management guidelines.",
+    "Scores above 70 trigger substantial-risk advisories and supervisor dispatch recommendations."
+  ],
+  "telemetryActive": false
+}

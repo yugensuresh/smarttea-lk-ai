@@ -1,0 +1,10 @@
+{
+  "id": "02-severity",
+  "name": "Leaf severity heuristic",
+  "version": "v0.1.0",
+  "endpoint": "/api/v1/predict/severity",
+  "levels": ["Minimal", "Low", "Moderate", "High", "Critical"],
+  "serviceConnected": true,
+  "inferenceEngine": "java-context-heuristic-v1",
+  "inferenceNote": "Estimates severity from Model 01 context until a dedicated segmentation model is deployed."
+}

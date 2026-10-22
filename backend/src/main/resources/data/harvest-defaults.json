@@ -1,0 +1,68 @@
+{
+  "readinessFields": [
+    {
+      "id": "a1",
+      "name": "Field A-1",
+      "location": "Upper Estate",
+      "mlFeatures": {
+        "rainfall_mm": 80,
+        "humidity_percent": 75,
+        "elevation_m": 900,
+        "temperature_c": 23
+      }
+    },
+    {
+      "id": "b4",
+      "name": "Field B-4",
+      "location": "Valley Slope",
+      "mlFeatures": {
+        "rainfall_mm": 40,
+        "humidity_percent": 68,
+        "elevation_m": 1180,
+        "temperature_c": 24
+      }
+    },
+    {
+      "id": "c2",
+      "name": "Field C-2",
+      "location": "New Planting",
+      "mlFeatures": {
+        "rainfall_mm": 55,
+        "humidity_percent": 92,
+        "elevation_m": 1050,
+        "temperature_c": 20
+      }
+    }
+  ],
+  "yieldFeatures": {
+    "temperature_max_c": 26,
+    "temperature_min_c": 18,
+    "temperature_avg_c": 24,
+    "rainfall_mm": 14,
+    "humidity_pct": 85,
+    "wind_speed": 2.4,
+    "soil_moisture_pct": 42,
+    "estate_id": "EST001",
+    "elevation_m": 1200,
+    "block_id": "B01",
+    "cultivated_area_ha": 12,
+    "plucking_interval_days": 7
+  },
+  "climateFeatures": {
+    "rainfall_mm": 45,
+    "temperature_avg_c": 24,
+    "soil_moisture_pct": 42,
+    "wind_speed": 2.4
+  },
+  "thrri": {
+    "readinessProbability": 0.72,
+    "highRiskProbability": 0.35
+  },
+  "microClimateForecastDemo": [
+    { "day": "Today", "temp": 22, "rainMm": 45, "humidity": 98, "tone": "default" },
+    { "day": "Tomorrow", "temp": 23, "rainMm": 30, "humidity": 95, "tone": "default" },
+    { "day": "Nov 12", "temp": 25, "rainMm": 5, "humidity": 78, "tone": "optimal", "badge": "OPTIMAL" },
+    { "day": "Nov 13", "temp": 26, "rainMm": 0, "humidity": 72, "tone": "optimal" },
+    { "day": "Nov 14", "temp": 24, "rainMm": 12, "humidity": 85, "tone": "default", "showRainIcon": true }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "model": "Model 02",
+    "modelStatus": "Live",
+    "engine": "HistGradientBoostingClassifier v1.2",
+    "endpoint": "/api/v1/predict/environmental-risk",
+    "serviceConnected": true,
+    "fleetLabel": "Estate telemetry fleet (42 stations)"
+  },
+  "alert": {
+    "category": "High",
+    "diseaseFocus": "Elevated fungal pressure — blister blight band",
+    "contributors": [
+      "Relative humidity in upper canopy band (85.4%)",
+      "Prolonged leaf wetness duration (6.8 h)",
+      "Recent rainfall accumulation (14.2 mm / 24 h)"
+    ],
+    "explanation": "Model 02 combines current and lagged environmental features to estimate disease pressure. Supervisors should review canopy humidity and leaf wetness during the next scouting cycle."
+  },
+  "metrics": [
+    {
+      "id": "temp",
+      "label": "Temperature",
+      "value": "24.2",
+      "unit": "°C",
+      "status": "Within normal band",
+      "statusIcon": "check",
+      "tone": "good",
+      "accent": "#1f8a4c",
+      "icon": "thermometer",
+      "demo": false
+    },
+    {
+      "id": "humidity",
+      "label": "Humidity",
+      "value": "85.4",
+      "unit": "%",
+      "status": "Elevated — infection band",
+      "statusIcon": "alert",
+      "tone": "risk",
+      "accent": "#c4845a",
+      "icon": "droplets",
+      "demo": false
+    },
+    {
+      "id": "wetness",
+      "label": "Leaf Wetness",
+      "value": "6.8",
+      "unit": "hrs",
+      "status": "Prolonged overnight persistence",
+      "statusIcon": "clock",
+      "tone": "warn",
+      "accent": "#c4845a",
+      "icon": "leaf",
+      "demo": false
+    },
+    {
+      "id": "rain",
+      "label": "Rainfall (24h)",
+      "value": "14.2",
+      "unit": "mm",
+      "status": "Moderate accumulation",
+      "statusIcon": "drop",
+      "tone": "neutral",
+      "accent": "#1f8a4c",
+      "icon": "cloud",
+      "demo": false
+    }
+  ],
+  "hourlyTrend": [
+    { "label": "Mon 12:00", "humidity": 68, "temperature": 22.0, "riskScore": 38, "riskCategory": "Moderate" },
+    { "label": "Mon 18:00", "humidity": 71, "temperature": 21.6, "riskScore": 42, "riskCategory": "Moderate" },
+    { "label": "Tue 00:00", "humidity": 74, "temperature": 21.2, "riskScore": 48, "riskCategory": "Moderate" },
+    { "label": "Tue 06:00", "humidity": 76, "temperature": 20.8, "riskScore": 52, "riskCategory": "Moderate" },
+    { "label": "Tue 12:00", "humidity": 78, "temperature": 21.5, "riskScore": 58, "riskCategory": "Moderate" },
+    { "label": "Tue 18:00", "humidity": 81, "temperature": 22.1, "riskScore": 66, "riskCategory": "High" },
+    { "label": "Wed 00:00", "humidity": 83, "temperature": 22.8, "riskScore": 74, "riskCategory": "High" },
+    { "label": "Now", "humidity": 85.4, "temperature": 24.2, "riskScore": 82, "riskCategory": "High", "now": true }
+  ],
+  "modelInputs": [
+    { "feature": "Air temperature", "value": "24.2 °C", "lag": "Current hour" },
+    { "feature": "Relative humidity", "value": "85.4 %", "lag": "Current hour" },
+    { "feature": "Soil moisture (volumetric)", "value": "31.2 %", "lag": "Current hour" },
+    { "feature": "Leaf wetness duration", "value": "6.8 h", "lag": "Rolling 24 h" },
+    { "feature": "Rainfall", "value": "14.2 mm", "lag": "Past 24 h" },
+    { "feature": "Light intensity (PAR)", "value": "412 µmol/m²/s", "lag": "Current hour" },
+    { "feature": "Wind speed", "value": "1.8 m/s", "lag": "Current hour" },
+    { "feature": "Relative humidity", "value": "81.2 %", "lag": "Lag 6 h" },
+    { "feature": "Relative humidity", "value": "76.5 %", "lag": "Lag 12 h" },
+    { "feature": "Air temperature", "value": "22.4 °C", "lag": "Lag 6 h" },
+    { "feature": "Leaf wetness duration", "value": "4.1 h", "lag": "Lag 12 h" }
+  ],
+  "actionPlan": {
+    "title": "Review canopy humidity and leaf wetness during the next scouting cycle.",
+    "detail": "Confirm drainage and airflow in affected blocks, document findings, and align spray or cultural interventions with agronomy guidelines."
+  },
+  "telemetry": [
+    { "sensor": "Canopy RH probe (NE-S2)", "value": "85.4 %", "status": "Live" },
+    { "sensor": "Leaf wetness plate (NE-S2)", "value": "6.8 h", "status": "Live" },
+    { "sensor": "Air temperature node (NE-S2)", "value": "24.2 °C", "status": "Live" },
+    { "sensor": "Rain gauge (NE estate)", "value": "14.2 mm / 24 h", "status": "Live" },
+    { "sensor": "Spore trap index (NE-S2)", "value": "Elevated", "status": "Live" }
+  ]
+}

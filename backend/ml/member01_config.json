@@ -1,0 +1,6 @@
+{
+  "diseaseClassIds": ["blister", "grey", "redRust", "healthy"],
+  "diseaseClassLabels": ["Blister Blight", "Grey Blight", "Red Rust", "Healthy"],
+  "riskClassLabels": ["Low", "Moderate", "High", "Very High"],
+  "pdviSeverityLabels": ["Low", "Moderate", "High", "Severe"]
+}
