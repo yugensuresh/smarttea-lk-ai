@@ -15,7 +15,12 @@ Supervisors sign in, open the Plantation Command Centre, and work through scored
 | Resource optimization | Component 04 tabs: Demo scenarios, Recommendation, Enter reading, Weather forecast, History | Fertilizer, irrigation, fungicide, and dolomite: amount per hectare and a time window |
 | Operations | `/alerts`, `/reports`, `/settings`, `/profile`, `/support` | Alert feed, reports, settings, and the signed-in profile |
 
-PDVI (Plantation Disease Vulnerability Index) combines Model 01 confidence with Model 02 severity probabilities. THRRI (Tea Harvest Readiness and Risk Index) blends harvest-readiness probability with high climate-risk probability. STII (SmartTea Intelligence Index) blends tea grade with the sustainability score. Member 04’s recommendation is the intervention plan: action, kilograms per hectare, a window inside the next 96 hours, and the reason.
+PDVI (Plantation Disease Vulnerability Index) combines Model 01 confidence with Model 02 severity probabilities. THRRI (Tea Harvest Readiness and Risk Index) blends harvest-readiness probability with high climate-risk probability. STII (SmartTea Intelligence Index) blends tea grade with the sustainability score. Member 04’s recommendation is the intervention plan: action, kilograms per hectare, a window inside the next 96 hours, and the reason.  
+  
+**Authors:**  
+Member 01 - **Yugen S**  
+Member 02 - **Hansani G E P**  
+Member 03 - **WICKRAMASINGHE W.A.S.S.B**
 
 ## Repository layout
 
