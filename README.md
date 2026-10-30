@@ -57,8 +57,6 @@ Member 04 (Component 04) is a second process layout. Its public API is Spring Bo
 └── setup.bat · start.bat · stop.bat
 ```
 
-Deeper notes live in [backend/README.md](backend/README.md), [backend/ml/README.md](backend/ml/README.md), and [frontend/README.md](frontend/README.md).
-
 ## Architecture
 
 Members 01–03: the browser talks only to the React app. In development, Vite proxies `/api` to Spring Boot on port 8000. Spring serves catalog JSON for the command centre and shells out to one Python process for model inference. Python reads a JSON request on stdin and writes a JSON result on stdout.
@@ -596,15 +594,15 @@ Member 04 (Component 04) settings:
 | Optimizer rule | 3.5 kg green leaf per kg N | A nitrogen dose below this gain is not recommended |
 | Action window | next 96 h, 06:00–16:00 | Rain, moisture, and wind gates are in the Member 04 section below |
 
-## Member 04 — Tea Plantation Resource Optimization and Intervention Planning Framework
+## Member 04 - Tea Plantation Resource Optimization and Intervention Planning Framework
 
 Member 04 decides, for each tea block, what to do next, how much, and when: fertilizer, irrigation, fungicide, and soil-pH correction. It uses the live soil reading and the weather forecast so each block gets the least input for the most growth, and nothing is applied just before heavy rain.
 
-The sections below are the Component 04 project record (CSP 001): how the three tiers work, the 2025 results, the hybrid dataset, Windows setup, the dashboard, the API, tests, and sources. `setup.bat` and `start.bat` launch that stack: FastAPI on port 8000, Spring Boot on port 8080, MongoDB, and the React dashboard on port 5173.
+The sections below are the Component 04 project record : how the three tiers work, the 2025 results, the hybrid dataset, Windows setup, the dashboard, the API, tests, and sources. `setup.bat` and `start.bat` launch that stack: FastAPI on port 8000, Spring Boot on port 8080, MongoDB, and the React dashboard on port 5173.
 
 **Scope:** agronomic only. No cost, labour, or machinery variables.
 
-**Author:** 
+**Author:** Ranawana R.M.S.V
 
 ![Python](https://img.shields.io/badge/Python-3.14-3776AB) ![FastAPI](https://img.shields.io/badge/FastAPI-ML%20service-009688) ![Java](https://img.shields.io/badge/Java-21%20%C2%B7%20Spring%20Boot%203.3-6DB33F) ![React](https://img.shields.io/badge/React-18%20%C2%B7%20Tailwind-61DAFB) ![MongoDB](https://img.shields.io/badge/MongoDB-9.0-47A248)
 
