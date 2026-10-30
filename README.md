@@ -1,5 +1,7 @@
 # SmartTea LK
 
+**Repository:** [https://github.com/yugensuresh/smarttea-lk-ai](https://github.com/yugensuresh/smarttea-lk-ai)
+
 SmartTea LK is a plantation-intelligence workspace for tea-estate supervisors. It brings four frameworks together: leaf and disease health, harvest and climate, tea quality and sustainability, and resource optimization with intervention planning.
 
 Supervisors sign in, open the Plantation Command Centre, and work through scored fields, alerts, and model runs for estates such as Nuwara Eliya, Dimbula, and Kandy Ridge. Disease, risk, and PDVI results for the current leaf specimen stay in the browser session so the next page can continue the same run. Member 04 takes the next step for a block: from the live soil reading and the weather forecast it chooses the action, the amount, and the hour.
